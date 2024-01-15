@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <div class="container-fluid mx-auto col-lg-7 col-10 shadow-sm mt-lg-5 mt-2 p-3">
+        <h1 class="text-center text-decoration-inderline my-3 ">Mini Mart</h1>
+        <input type="text" class="form-control shadow-none form-control-sm my-2" id="item">
+        <button class="w-100 btn btn-outline-warning my-2 btn-sm" onclick="addItems()">submit</button>
+    </div>
+    <div class="container-fluid mx-auto col-lg-7 col-10 my-4 shadow p-3">
+        <div id="show"></div>
+    </div>
+    <div class="container-fluid mx-auto col-lg-7 col-10 my-4 shadow-sm p-3">
+        <button class="btn btn-sm btn-dark mx-2 shadow" onclick="addBegin()"> Add to Biginning</button>
+        <button class="btn btn-sm btn-danger mx-2 shadow" onclick="deleteFirst()"> delete First</button>
+        <button class="btn btn-sm btn-warning mx-2 shadow" onclick="deleteLast()"> Delete Last</button>
+        <button class="btn btn-sm btn-primary mx-2 shadow" onclick="deleteAny()"> delete Any</button>
+        <button class="btn btn-sm btn-dark mx-2 shadow" onclick="Edit()"> Edit</button>
+        <button class="btn btn-sm btn-danger mx-2 shadow" onclick="deleteAll()"> deleteAll</button>
+
+
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
