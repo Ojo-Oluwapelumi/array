@@ -40,9 +40,16 @@ function displayCart() {
     for (i = 0; i < cart.length; i++) {
         show.innerHTML +=
             `
-<p>${i + 1}. ${cart[i]} </p>
-
+            <p>${i + 1}. ${cart[i]} </p>
+            
+            <button class="btn btn-sm btn-danger" onclick="del(${i})">delete </button>
+            <button class="btn btn-sm">edit </button>
 `
     }
+}
+function del(index) {
+    console.log(index);
+    cart.splice(index,1)
+    displayCart()
 }
 
